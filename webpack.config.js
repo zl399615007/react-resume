@@ -7,7 +7,7 @@ module.exports = {
     },
     output: {
         path: './dist',
-        publicPath: 'dist/',
+        publicPath: 'dist/',//用于生产环境自动更新url地址
         filename: 'build.js'
     },
     module: {

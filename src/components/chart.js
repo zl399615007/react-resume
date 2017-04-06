@@ -12,106 +12,234 @@ export default class myChart extends React.Component {
         offset: 1,
         color: '#cdd0d5'
     }]),
+    legend: [{
+          formatter: function (name) {
+        return echarts.format.truncateText(name, 100, '14px Microsoft Yahei', '…');
+    },
+    tooltip: {
+        show: true
+    },
+          selectedMode: 'false',
+          bottom: 20,
+          data: ['熟练掌握', '基本应用', '开发工具', '常用类库']
+      }],
        title:{
-        text: "个人技能分析",
-        subtext: "技能关系",
+        text: "技能关系图",
+        subtext: "",
         top: "top",
         left: "center"
     },
-      tooltip: {},
+    
+      
      
       
       animationDuration: 3000,
       animationEasingUpdate: 'quinticInOut',
       series: [{
-          name: '技术栈',
+          name: '',
           type: 'graph',
           layout: 'force',
 
           force: {
-              repulsion: 50
+              repulsion: 200
           },
           data: [{
-              "name": "HTML",
-              "category": "HTML",
-              "symbolSize": 50,
+              "name": "熟练掌握",
+              "category": "熟练掌握",
+              "symbolSize": 60,
               "draggable": "true",
               "value": 27
 
           }, {
-              "name": "CSS",
-              "symbolSize": 50,
-              "category": "CSS",
+              "name": "基本应用",
+              "symbolSize": 60,
+              "category": "基本应用",
               "draggable": "true",
               "value": 1
           },{
-              "name": "JavaScript",
-              "symbolSize": 50,
-               "category": "JavaScript",
+              "name": "开发工具",
+              "symbolSize": 60,
+               "category": "开发工具",
               "draggable": "true",
               "value": 1
           },{
-              "name": "标签语义化",
-              "category": "HTML",
+              "name": "常用类库",
+              "category": "常用类库",
+              "symbolSize": 60,
+              "draggable": "true",
+              "value": 1
+          },{
+              "name": "HTML5",
+              "category": "熟练掌握",
               "symbolSize": 10,
               "draggable": "true",
-              "value": 1
+              
           },{
-              "name": "html5",
-              "category": "HTML",
-              "symbolSize": 3,
+              "name": "CSS3",
+              "category": "熟练掌握",
+              "symbolSize": 10,
               "draggable": "true",
-              "value": 1
+              
           },{
-              "name": "flex布局",
-              "category": "CSS",
-              "symbolSize": 3,
+              "name": "JavaScript",
+              "category": "熟练掌握",
+              "symbolSize": 10,
               "draggable": "true",
-              "value": 1
+              
           },{
-              "name": "css3",
-              "category": "CSS",
-              "symbolSize": 3,
+              "name": "photoShop",
+               "category": "熟练掌握",
+              "symbolSize": 10,
               "draggable": "true",
-              "value": 1
+              
+          },{
+              "name": "React",
+               "category": "基本应用",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "Es6",
+               "category": "基本应用",
+              "symbolSize": 10,
+              "draggable": "true",
+             
+          },{
+              "name": "Webpack",
+               "category": "基本应用",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "nodeJs",
+               "category": "基本应用",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "Git",
+               "category": "开发工具",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "SVN",
+               "category": "开发工具",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "Fiddler",
+               "category": "开发工具",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "VSCode",
+               "category": "开发工具",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "WebStorm",
+               "category": "开发工具",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "Chrome",
+               "category": "开发工具",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "Bootstrap",
+               "category": "常用类库",
+              "symbolSize": 10,
+              "draggable": "true",
+              
           },{
               "name": "jQuery",
-               "category": "JavaScript",
-              "symbolSize": 3,
+               "category": "常用类库",
+              "symbolSize": 10,
               "draggable": "true",
-              "value": 1
+              
           },{
-              "name": "react",
-               "category": "JavaScript",
-              "symbolSize": 3,
+              "name": "Zepto",
+               "category": "常用类库",
+              "symbolSize": 10,
               "draggable": "true",
-              "value": 1
+              
+          },{
+              "name": "Echarts",
+               "category": "常用类库",
+              "symbolSize": 10,
+              "draggable": "true",
+              
           }],
           links: [{
-              "source": "标签语义化",
-              "target": "HTML"
+              "source": "HTML5",
+              "target": "熟练掌握"
           },  {
-              "source": "CSS",
-              "target": "css3"
+              "source": "CSS3",
+              "target": "熟练掌握"
           }, {
+              "source": "JavaScript",
+              "target": "熟练掌握"
+          },{
+              "source": "React",
+              "target": "基本应用"
+          },{
+              "source": "Es6",
+              "target": "基本应用"
+          },{
+              "source": "Webpack",
+              "target": "基本应用"
+          },{
+              "source": "nodeJs",
+              "target": "基本应用"
+          },{
+              "source": "Git",
+              "target": "开发工具"
+          },{
+              "source": "SVN",
+              "target": "开发工具"
+          },{
+              "source": "Fiddler",
+              "target": "开发工具"
+          },{
+              "source": "VSCode",
+              "target": "开发工具"
+          },{
+              "source": "WebStorm",
+              "target": "开发工具"
+          },{
+              "source": "Chrome",
+              "target": "开发工具"
+          },{
+              "source": "Bootstrap",
+              "target": "常用类库"
+          },{
               "source": "jQuery",
-              "target": "JavaScript"
+              "target": "常用类库"
           },{
-              "source": "react",
-              "target": "JavaScript"
+              "source": "Zepto",
+              "target": "常用类库"
           },{
-              "source": "html5",
-              "target": "HTML"
+              "source": "Echarts",
+              "target": "常用类库"
           },{
-              "source": "CSS",
-              "target": "flex布局"
+              "source": "photoShop",
+              "target": "熟练掌握"
           }],
           categories:[{
-               'name': 'JavaScript'
+               'name': '熟练掌握'
           }, {
-              'name': 'HTML'
+              'name': '基本应用'
           }, {
-              'name': 'CSS'
+              'name': '开发工具'
+          },{
+              'name':'常用类库'
           }],
           focusNodeAdjacency: true,
           roam: true,
@@ -141,8 +269,22 @@ export default class myChart extends React.Component {
 
     render() {
         return (
-            <div id="container" className="chart-box">
-
+            <div className="chartCount">
+                <div id="container" className="chart-box" style={{width:'700px',height:'700px'}}></div>
+                <ul className="chartRight">
+                <li>
+                    <span>熟练掌握：</span><span>htmhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmll</span>
+                </li>
+                <li>
+                    <span>基本应用：</span><span>html</span>
+                </li>
+                <li>
+                    <span>开发工具：</span><span>html</span>
+                </li>
+                <li>
+                    <span>常用类库：</span><span>html</span>
+                </li>
+            </ul>
             </div>
         )
     }
