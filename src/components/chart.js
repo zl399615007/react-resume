@@ -270,19 +270,19 @@ export default class myChart extends React.Component {
     render() {
         return (
             <div className="chartCount">
-                <div id="container" className="chart-box" style={{width:'700px',height:'700px'}}></div>
+                <div id="container" className="chart-box" style={{width:'40%',height:'700px'}}></div>
                 <ul className="chartRight">
                 <li>
-                    <span>熟练掌握：</span><span>htmhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmll</span>
+                    <span>熟练掌握：</span><span>原生JavaScript，HTML5，CSS3等前端技术，了解W3C标准和HTML语义化</span>
                 </li>
                 <li>
-                    <span>基本应用：</span><span>html</span>
+                    <span>基本应用：</span><span>能基于react+react-router+Webpack+Es6开 发项目，并有实际开发经验；</span>
                 </li>
                 <li>
-                    <span>开发工具：</span><span>html</span>
+                    <span>开发工具：</span><span>运用Git或者SVN管理代码，Fiddler调试工具监控修改http请求数据</span>
                 </li>
                 <li>
-                    <span>常用类库：</span><span>html</span>
+                    <span>常用类库：</span><span>运用jQuery操作DOM，移动端使用Zepto,</span>
                 </li>
             </ul>
             </div>
