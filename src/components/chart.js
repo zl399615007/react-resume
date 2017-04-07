@@ -154,7 +154,7 @@ export default class myChart extends React.Component {
               
           },{
               "name": "Bootstrap",
-               "category": "常用类库",
+               "category": "基本应用",
               "symbolSize": 10,
               "draggable": "true",
               
@@ -166,6 +166,24 @@ export default class myChart extends React.Component {
               
           },{
               "name": "Zepto",
+               "category": "常用类库",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "animate.css",
+               "category": "常用类库",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "iscroll",
+               "category": "常用类库",
+              "symbolSize": 10,
+              "draggable": "true",
+              
+          },{
+              "name": "swiper",
                "category": "常用类库",
               "symbolSize": 10,
               "draggable": "true",
@@ -218,7 +236,7 @@ export default class myChart extends React.Component {
               "target": "开发工具"
           },{
               "source": "Bootstrap",
-              "target": "常用类库"
+              "target": "基本应用"
           },{
               "source": "jQuery",
               "target": "常用类库"
@@ -231,6 +249,15 @@ export default class myChart extends React.Component {
           },{
               "source": "photoShop",
               "target": "熟练掌握"
+          },{
+              "source": "animate.css",
+              "target": "常用类库"
+          },{
+              "source": "iscroll",
+              "target": "常用类库"
+          },{
+              "source": "swiper",
+              "target": "常用类库"
           }],
           categories:[{
                'name': '熟练掌握'
@@ -270,19 +297,19 @@ export default class myChart extends React.Component {
     render() {
         return (
             <div className="chartCount">
-                <div id="container" className="chart-box" style={{width:'40%',height:'700px'}}></div>
+                <div id="container" className="chart-box" style={{width:'45%',height:'700px'}}></div>
                 <ul className="chartRight">
                 <li>
-                    <span>熟练掌握：</span><span>原生JavaScript，HTML5，CSS3等前端技术，了解W3C标准和HTML语义化</span>
+                    <span>熟练掌握：</span><span>原生JavaScript，HTML5，CSS3等前端技术。理解原生JS的闭包、面向对象、原型、继承，对原生JS兼容性有一定了解。理解W3C标准，标签语义化。熟练运用flex布局，能使用rem进行移动端开发</span>
                 </li>
                 <li>
-                    <span>基本应用：</span><span>能基于react+react-router+Webpack+Es6开 发项目，并有实际开发经验；</span>
+                    <span>基本应用：</span><span>能基于react+react-router+Webpack+Es6+Bootstrap开发项目，并有实际开发经验。运用基于node.js平台的Express框架开发个人博客</span>
                 </li>
                 <li>
                     <span>开发工具：</span><span>运用Git或者SVN管理代码，Fiddler调试工具监控修改http请求数据</span>
                 </li>
                 <li>
-                    <span>常用类库：</span><span>运用jQuery操作DOM，移动端使用Zepto,</span>
+                    <span>常用类库：</span><span>运用jQuery操作DOM，移动端使用Zepto，用animate.css实现动画效果，用iscroll实现下拉刷新上拉加载和局部滚动，用swiper实现移动端触摸滑动切换等</span>
                 </li>
             </ul>
             </div>
