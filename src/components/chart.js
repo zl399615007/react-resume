@@ -1,5 +1,6 @@
 import React from 'react'
 import echarts from 'ECharts'
+import { Tag } from 'antd'
 
 export default class myChart extends React.Component {
     randerChart = () => {
@@ -297,19 +298,19 @@ export default class myChart extends React.Component {
     render() {
         return (
             <div className="chartCount">
-                <div id="container" className="chart-box" style={{width:'40%',height:'600px'}}></div>
+                <div id="container" className="chart-box" style={{width:'42%',height:'600px'}}></div>
                 <ul className="chartRight animated fadeInRight">
                 <li>
-                    <span>熟练掌握：</span><span>原生JavaScript，HTML5，CSS3等前端技术。理解原生JS的闭包、面向对象、原型、继承，对原生JS兼容性有一定了解。理解W3C标准，标签语义化。熟练运用flex布局，能使用rem进行移动端开发</span>
+                    <Tag color="#C23531">熟练掌握</Tag><span>原生JavaScript，HTML5，CSS3等前端技术。理解原生JS的闭包、面向对象、原型、继承，对原生JS兼容性有一定了解。理解W3C标准，标签语义化。熟练运用flex布局，能使用rem进行移动端开发</span>
                 </li>
                 <li>
-                    <span>基本应用：</span><span>能基于react+react-router+Webpack+Es6+Bootstrap开发项目。运用基于node.js平台的Express框架开发个人博客</span>
+                    <Tag color="#2F4554">基本应用</Tag><span>能基于react+react-router+Webpack+Es6+Bootstrap开发项目。运用基于node.js平台的Express框架开发个人博客</span>
                 </li>
                 <li>
-                    <span>开发工具：</span><span>运用Git或者SVN管理代码，Fiddler调试工具监控修改http请求数据</span>
+                    <Tag color="#61A0A8">开发工具</Tag><span>运用Git或者SVN管理代码，Fiddler调试工具监控修改http请求数据</span>
                 </li>
                 <li>
-                    <span>常用类库：</span><span>运用jQuery操作DOM，移动端使用Zepto，用animate.css实现动画效果，用iscroll实现下拉刷新上拉加载和局部滚动，用swiper实现移动端触摸滑动切换等</span>
+                    <Tag color="#D48265">常用类库</Tag><span>运用jQuery操作DOM，移动端使用Zepto，用animate.css实现动画效果，用iscroll实现下拉刷新上拉加载和局部滚动，用swiper实现移动端触摸滑动切换等</span>
                 </li>
             </ul>
             </div>

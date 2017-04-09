@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel } from 'antd';
+import { Carousel,Tag} from 'antd'
 const Mywork =[{
     name:'在线个人简历',
     projectDescription:'基于react及antd的单页面个人简历，使用react-router管理路由，webpack打包文件,运用Es6语法开发,通过node的npm管理包文件',
@@ -7,7 +7,7 @@ const Mywork =[{
     summary:'能基本应用React开发项目，对commonjs规范和Es6特性有一定了解'
 },{
     name:'无锡海岸城、华宇集团微信公众号',
-    projectDescription:'该项目包括后台系统和微信公众号，实现了商场的大部分营销功能，包括登录、签到、商城、积分等。项目兼容苹果和安卓系统，适配大部分主流机型。后台使用asp.net，MVC模式。',
+    projectDescription:'该项目包括后台系统和微信公众号，实现了商场的大部分营销功能，包括登录、签到、商城、积分等。项目兼容苹果和安卓系统，适配大部分主流机型。',
     responsibilityDescription:'主要负责项目组微信端页面的制作，利用HTML+CSS完成页面适配和兼容，利用Zepto插件实现抽红包、刮刮乐、大转盘等前端功能，以及部分列表数据展示',
     summary:'通过微信公众号开发对移动端项目有比较深的了解，特别是页面性能、设备兼容问题。通过动态初始化iscroll来解决一个页面多次初始化iscroll失效的问题。了解asp.net的MVC开发模式，熟悉Razor语法'
 },{
@@ -33,16 +33,16 @@ class myForm extends React.Component {
                 return <div>
                     <ul className="projectList">
                         <li>
-                            <span>项目名称：</span><span>{index.name}</span>
+                            <Tag>项目名称</Tag><span>{index.name}</span>
                         </li>
                         <li>
-                            <span>项目描述：</span><span>{index.projectDescription}</span>
+                            <Tag>项目描述</Tag><span>{index.projectDescription}</span>
                         </li>
                         <li>
-                            <span>项目职责：</span><span>{index.responsibilityDescription}</span>
+                            <Tag>项目职责</Tag><span>{index.responsibilityDescription}</span>
                         </li>
                         <li>
-                            <span>项目总结：</span><span>{index.summary}</span>
+                            <Tag>项目总结</Tag><span>{index.summary}</span>
                         </li>
                     </ul>
                 </div>

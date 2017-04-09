@@ -18,12 +18,9 @@ export default class myTable extends React.Component {
             width: '20%',
             dataIndex: 'education'
         }, {
-            title: '个人博客',
+            title: '求职岗位',
             width: '20%',
-            dataIndex: 'blog',
-            render(text) {
-                return <a href={text} target="_blank">博客</a>
-            }
+            dataIndex: 'job',
         }, {
             title: '目前状态',
             width: '20%',
@@ -33,7 +30,7 @@ export default class myTable extends React.Component {
             name:'郑龙',
             age:25,
             education:'本科',
-            blog:'http://www.zlongblog.online:3000',
+            job:'前端工程师',
             nowstate:'就职于软通动力'
 
         }]

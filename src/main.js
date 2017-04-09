@@ -51,13 +51,12 @@ class Sider extends React.Component {
     componentDidMount() {
         this.getUser()
     }
-
+    
     getUser = () => {
         this.setState({
             username: 'zl'
         })
     }
-
     render() {
         return (
             <div>
@@ -66,7 +65,7 @@ class Sider extends React.Component {
                     <Menu theme="dark"
                         onClick={this.handleClick}
                         style={{ width: 185 }}
-                        defaultOpenKeys={['sub1', 'sub2']}
+                        defaultOpenKeys={['sub1']}
                         defaultSelectedKeys={[this.state.current]}
                         mode="inline"
                     >
@@ -87,15 +86,17 @@ class Sider extends React.Component {
                 </div>
             </div>
         )
+       
     }
+    
 }
 
 
 // 配置路由
 render((
     <Router history={hashHistory} >
-        <Route path="/" component={Sider}>
-            <IndexRoute path="myTable" component={myTable} />
+        <Route path="/" component={Sider} >
+            <IndexRoute path="myTable" component={myTable}/>
             <Route path="myTable" component={myTable} />
             <Route path="myForm" component={myForm} />
             <Route path="myChart" component={myChart} />
